@@ -31,10 +31,10 @@
  (name libusb-ffi)
  (synopsis "")
  (description "")
- (depends ocaml ctypes-foreign))
+ (depends ocaml libusb ctypes-foreign))
 
 (package
  (name libusb-stub)
  (synopsis "")
  (description "")
- (depends ocaml ctypes))
+ (depends ocaml libusb ctypes))

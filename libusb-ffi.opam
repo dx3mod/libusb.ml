@@ -10,6 +10,7 @@ bug-reports: "https://github.com/dx3mod/libusb.ml/issues"
 depends: [
   "dune" {>= "3.20"}
   "ocaml"
+  "libusb"
   "ctypes-foreign"
   "odoc" {with-doc}
 ]

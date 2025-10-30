@@ -15,6 +15,18 @@ $ opam install . --deps-only
 $ dune build
 ```
 
+## Overview
+
+```ocaml
+#require "libusb";;
+#require "libusb-ffi";;
+
+module Usb = Libusb.Make (Libusb_ffi)
+
+Usb.with_init_context @@ fun () ->
+  (* ... *)
+```
+
 ## References
 
 - [libusb] official site

@@ -19,5 +19,5 @@
  (name libusb)
  (synopsis "Libusb library bindings")
  (description "Libusb library bindings")
- (depends ocaml)
+ (depends ocaml (odoc :with-docs))
  (tags (usb)))

@@ -1,6 +1,3 @@
 (library
  (public_name libusb)
- (foreign_stubs
-  (language c)
-  (names bindings)
-  (flags -lusb)))
+ (libraries ctypes))

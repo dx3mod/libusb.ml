@@ -1,0 +1,3 @@
+(library
+ (name libusb_ffi)
+ (libraries libusb ctypes-foreign))

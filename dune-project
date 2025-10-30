@@ -1,5 +1,7 @@
 (lang dune 3.20)
 
+(using ctypes 0.3)
+
 (name libusb)
 
 (generate_opam_files true)
@@ -24,3 +26,15 @@
   ctypes
   (odoc :with-docs))
  (tags (usb)))
+
+(package
+ (name libusb-ffi)
+ (synopsis "")
+ (description "")
+ (depends ocaml ctypes-foreign))
+
+(package
+ (name libusb-stub)
+ (synopsis "")
+ (description "")
+ (depends ocaml ctypes))

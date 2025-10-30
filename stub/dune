@@ -1,0 +1,18 @@
+(library
+ (name libusb_stub)
+ (public_name libusb-stub)
+ (libraries libusb ctypes)
+ (ctypes
+  (external_library_name libusb-1.0)
+  (build_flags_resolver pkg_config)
+  (headers
+   (include "libusb-1.0/libusb.h"))
+  (type_description
+   (instance Type)
+   (functor Type_description))
+  (function_description
+   (concurrency sequential)
+   (instance Functions)
+   (functor Function_description))
+  (generated_types Types_generated)
+  (generated_entry_point C)))

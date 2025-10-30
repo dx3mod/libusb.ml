@@ -1,3 +1,4 @@
 (library
  (name libusb_ffi)
+ (public_name libusb-ffi)
  (libraries libusb ctypes-foreign))
